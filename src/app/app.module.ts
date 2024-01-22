@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { MainComponent } from './Components/main/main.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { ProductsListComponent } from './Components/products-list/products-list.component';
+import { FormsModule } from '@angular/forms';
 
 // class dec
 @NgModule({
@@ -15,11 +17,13 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     NavbarComponent,
     FooterComponent,
     MainComponent,
+    ProductsListComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
