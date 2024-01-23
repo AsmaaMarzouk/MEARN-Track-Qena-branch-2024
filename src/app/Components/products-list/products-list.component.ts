@@ -12,18 +12,22 @@ export class ProductsListComponent implements OnInit {
   showImage: boolean = true;
   user: string = 'Ali';
 
-  productsListFilter:Iproduct[]=[];
+  productsListFilter: Iproduct[] = [];
   // product1:TrackInfo=new TrackInfo();
   // product2:TrackInfo=new TrackInfo();
   // product2:TrackInfo=new TrackInfo();
 
+  // Day3
+
+  date1: Date = new Date();
+
+  // ##################################
   set listFilterValue(value: string) {
     console.log(value);
 
-    this.productsListFilter=this.performFilter(value);
+    this.productsListFilter = this.performFilter(value);
     // console.log(this.performFilter(value));
     console.log(this.productsListFilter);
-
   }
   // categoryID
   // 1 => tables , 2=> chairs , 3=> tv units
@@ -122,9 +126,8 @@ export class ProductsListComponent implements OnInit {
     ];
   }
   ngOnInit(): void {
-    this.productsListFilter=this.productList;
+    this.productsListFilter = this.productList;
   }
-
 
   toggleImg() {
     this.showImage = !this.showImage;
